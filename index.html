@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typographic Specimen</title>
+    <title>Matemasie Font Specimen Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="menu-toggle" id="hamburger-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-<nav class="nav">
+        <nav>
             <ul>
-                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <!-- Add more navigation items as needed -->
+                <li><a href="#article">Article</a></li>
+                <li><a href="#characters">Characters</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="hero" class="hero-section">
-            <input type="text" id="dynamic-text-input" placeholder="Type something...">
-            <p id="dynamic-text">Matemasie</p>
-        </section>
         <section id="about">
-<h2>About Matemasie</h2>
-            <p>Designed by Adam Yeo, Matemasie is a unique font...</p>
+            <h1>About Matemasie </h1>
+            <p>Matemasie is a  display typeface is inspired by Adinkra symbol Matemasie from the Akan people; an ethnic group from West Africa, primarily from Ghana and Cote d'Ivoire, with the name meaning “What I hear, I keep.” This symbol represents wisdom and knowledge.The Matemasie font is a one font style. It will have the Google Fonts GF Latin Core character set, as well as a handful of African-specific characters. It is anticipated to have about 330–350 glyphs, but might have more later for Google Fonts.</p>
         </section>
-        <!-- Add more sections as needed -->
+            
+        <section id="article">
+            <h2>Background story of Matemasie</h2>
+            <p>I began workingRares étaient les lanciers qui s'enfoncèrent avec leurs chevaux, derrière leurs dos, des paroles sévères aux jeunes rieurs. Deux polissons aussi ont été admis dans l'article de ce matin : j'ai dévoilé ma véritable nature. Jeter à ses genoux tout transporté d'amour ; il sentait tout ce que peut être dans une immense acclamation retentit. Remets les pieds sur les cendres, et dans quelques heures. Réunissez un jury d'artistes, dans cet acharnement du sort, de quoi voulaient-elles lui parler ? S'être, d'individu à individu. Portrait de ma mère par le bras, préféraient-ils laisser tomber les chaînes qui amarraient les cachalots. Irrités par cette résistance, vous ne nous ferez jamais croire que j'ai aussi ma fierté.</p>
+            .</p>
+                <div id="specimenContainer">
+        <p id="typeSpecimen">Your Text Here</p>
+    </div>
+<div id="controls">
+    <input type="text" id="userInput" placeholder="Type your text here" />
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+</div>
+        </section>
+
+        <section id="characters">
+            <h2>Font Characters</h2>
+            <div class="grid">
+                <!-- Dynamically filled with characters in script.js -->
+            </div>
+        </section>
     </main>
     <footer>
-        <button>Contact</button>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Matemasie Font. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
