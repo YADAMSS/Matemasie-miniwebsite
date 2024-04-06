@@ -56,56 +56,16 @@ At the core of Matemasie lay its inspiration—the Adinkra symbol "Mate Masie." 
 As Matemasie took its first breaths, it seemed to carry the echoes of distant lands and the whispers of ancestors long gone. Its journey was not just about shaping letters; it was about bridging worlds, connecting past and present, and preserving the essence of African heritage for generations to come.
 With each stroke of the pen, Matemasie wove stories of unity, resilience, and the timeless wisdom of Africa. It stood as a beacon of creativity and cultural pride, reminding the world that within the realm of typography, there existed a treasure trove of stories waiting to be told.
 And so, the tale of Matemasie continues to unfold, inspiring typographers and storytellers alike to explore the boundless depths of African culture and wisdom, one letter at a time.</p>
-      </div>
+    <div id="specimenContainer">
+        <p id="typeSpecimen">Your Text Here</p>
     </div>
-
-    <div id="glyphs" class="row mt-5">
-      <div class="col">
-        <h2>Glyphs</h2>
-        <p>Insert glyphs display here.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <h2>Demo Settings</h2>
-    <div class="form-group">
-      <label for="font-size">Font Size:</label>
-      <select class="form-control" id="font-size">
-        <option value="60px">Small</option>
-        <option value="400px">Medium</option>
-        <option value="800px">Large</option>
-        <option value="2800px">Extra Large</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="font-color">Font Color:</label>
-      <input type="color" class="form-control" id="font-color">
-    </div>
-
-    <div class="font-demo">
-      <p>This is a demo text showcasing the Matemasie font.</p>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#font-size').change(function(){
-        var fontSize = $(this).val();
-        $('.font-demo').css('font-size', fontSize);
-      });
-
-      $('#font-color').change(function(){
-        var fontColor = $(this).val();
-        $('.font-demo').css('color', fontColor);
-      });
-    });
-    </div>
-       </section>
+<div id="controls">
+    <input type="text" id="userInput" placeholder="Type your text here" />
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+</div>
+        </section>
 
         <section id="characters">
             <h2>Font Characters</h2>
