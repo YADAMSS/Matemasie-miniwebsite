@@ -79,11 +79,11 @@ main {
 }
 
 .grid div {
-    background-color: #333;
-    color: #fff;
+    background-color:black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 900px;
 }
 
