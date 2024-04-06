@@ -5,15 +5,50 @@
     font-style: normal;
 }
 body html {
-    height: auto; /* Allows page content to dictate total height */
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* Custom styles for Matemasie Font Showcase */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.font-demo {
+  font-family: 'Matemasie', sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+}
+
+/* Adjust spacing */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+/* Adjust font size */
+.font-size-small {
+  font-size: 16px;
+}
+
+.font-size-medium {
+  font-size: 24px;
+}
+
+.font-size-large {
+  font-size: 32px;
+}
+
+.font-size-extra-large {
+  font-size: 48px;
+}
+
     font-family: 'Matemasie', sans-serif; /* Apply Matemasie font */
 
 }
