@@ -1,122 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matemasie Font Showcase</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Matemasie, sans-serif;
-    }
-    .font-demo {
-      font-family: 'Matemasie', sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemasie Font Showcase</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Matemasie, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .font-demo {
+            font-family: 'Matemasie', sans-serif;
+            font-size: 36px; /* Change font size as needed */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important; /* Override Bootstrap default link color */
+        }
+    </style>
 </head>
+
 <body data-spy="scroll" data-target="#navbarNav">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Matemasie Font</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#article">Article</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#glyphs">Glyphs</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container mt-5">
-    <div id="about" class="row">
-      <div class="col">
-        <h2>About Matemasie Font</h2>
-        <p>Matemasie is an ultra-bold display typeface characterized by rounded edges and a distinctive feature where the shapes widen towards the top. It draws inspiration from the Adinkra symbol "Mate Masie," meaning "what I hear, I keep." This symbolizes interconnected ears, emphasizing the importance of listening and communication in oral traditions and cultures. Additionally, Mate Masie embodies principles of wisdom and prudence.</p>
-      </div>
-    </div>
-
-    <div id="article" class="row mt-5">
-      <div class="col">
-        <h2>Article</h2>
-        <p>
-          Once upon a time, in the bustling world of typography, there arose a remarkable typeface named Matemasie. Its creation marked a beautiful fusion of artistry, culture, and the wisdom of an ancient land.
-In the heart of the Latin African Google Font Project, a passionate typographer named Adam Yeo embarked on a journey to craft a typeface that would resonate with the spirit of Africa. Drawing from his roots in Cote d'Ivoire and guided by mentors Lisa Huang and Nathan Willis, Adam poured his soul into every curve and line of Matemasie.
-Matemasie emerged as a bold and vibrant display typeface, adorned with rounded edges and a unique feature where the shapes gracefully widened towards the heavens. It was not merely a collection of letters; it was a testament to the rich tapestry of African culture and tradition.
-At the core of Matemasie lay its inspiration—the Adinkra symbol "Mate Masie." Meaning "what I hear, I keep," this symbol encapsulated the essence of communication, wisdom, and interconnectedness. Like the symbol it drew from, Matemasie whispered tales of ancient wisdom and prudence to all who beheld its elegant curves.
-As Matemasie took its first breaths, it seemed to carry the echoes of distant lands and the whispers of ancestors long gone. Its journey was not just about shaping letters; it was about bridging worlds, connecting past and present, and preserving the essence of African heritage for generations to come.
-With each stroke of the pen, Matemasie wove stories of unity, resilience, and the timeless wisdom of Africa. It stood as a beacon of creativity and cultural pride, reminding the world that within the realm of typography, there existed a treasure trove of stories waiting to be told.
-And so, the tale of Matemasie continues to unfold, inspiring typographers and storytellers alike to explore the boundless depths of African culture and wisdom, one letter at a time.</p>
-      </div>
-    </div>
-
-    <div id="glyphs" class="row mt-5">
-      <div class="col">
-        <h2>Glyphs</h2>
-        <p>Insert glyphs display here.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <h2>Demo Settings</h2>
-    <div class="form-group">
-      <label for="font-size">Font Size:</label>
-      <select class="form-control" id="font-size">
-        <option value="60px">Small</option>
-        <option value="400px">Medium</option>
-        <option value="800px">Large</option>
-        <option value="2800px">Extra Large</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="font-color">Font Color:</label>
-      <input type="color" class="form-control" id="font-color">
-    </div>
-
-    <div class="font-demo">
-      <p>This is a demo text showcasing the Matemasie font.</p>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#font-size').change(function(){
-        var fontSize = $(this).val();
-        $('.font-demo').css('font-size', fontSize);
-      });
-
-      $('#font-color').change(function(){
-        var fontColor = $(this).val();
-        $('.font-demo').css('color', fontColor);
-      });
-    });
-    </div>
-       </section>
-
-        <section id="characters">
-            <h2>Font Characters</h2>
-            <div class="grid">
-                <!-- Dynamically filled with characters in script.js -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Matemasie Font</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#article">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#glyphs">Glyphs</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div id="about" class="row">
+            <div class="col">
+                <h2>About Matemasie Font</h2>
+                <p>Matemasie is an ultra-bold display typeface characterized by rounded edges and a distinctive feature where the shapes widen towards the top. It draws inspiration from the Adinkra symbol "Mate Masie," meaning "what I hear, I keep." This symbolizes interconnected ears, emphasizing the importance of listening and communication in oral traditions and cultures. Additionally, Mate Masie embodies principles of wisdom and prudence.</p>
+            </div>
+        </div>
+
+        <div id="article" class="row mt-5">
+            <div class="col">
+                <h2>Article</h2>
+                <p>
+                    Once upon a time, in the bustling world of typography, there arose a remarkable typeface named Matemasie. Its creation marked a beautiful fusion of artistry, culture, and the wisdom of an ancient land.
+            In the heart of the Latin African Google Font Project, a passionate typographer named Adam Yeo embarked on a journey to craft a typeface that would resonate with the spirit of Africa. Drawing from his roots in Cote d'Ivoire and guided by mentors Lisa Huang and Nathan Willis, Adam poured his soul into every curve and line of Matemasie.
+            Matemasie emerged as a bold and vibrant display typeface, adorned with rounded edges and a unique feature where the shapes gracefully widened towards the heavens. It was not merely a collection of letters; it was a testament to the rich tapestry of African culture and tradition.
+            At the core of Matemasie lay its inspiration—the Adinkra symbol "Mate Masie." Meaning "what I hear, I keep," this symbol encapsulated the essence of communication, wisdom, and interconnectedness. Like the symbol it drew from, Matemasie whispered tales of ancient wisdom and prudence to all who beheld its elegant curves.
+            As Matemasie took its first breaths, it seemed to carry the echoes of distant lands and the whispers of ancestors long gone. Its journey was not just about shaping letters; it was about bridging worlds, connecting past and present, and preserving the essence of African heritage for generations to come.
+            With each stroke of the pen, Matemasie wove stories of unity, resilience, and the timeless wisdom of Africa. It stood as a beacon of creativity and cultural pride, reminding the world that within the realm of typography, there existed a treasure trove of stories waiting to be told.
+            And so, the tale of Matemasie continues to unfold, inspiring typographers and storytellers alike to explore the boundless depths of African culture and wisdom, one letter at a time.</p>
+            </div>
+        </div>
+
+        <div id="glyphs" class="row mt-5">
+            <div class="col">
+                <h2>Glyphs</h2>
+                <p>Insert glyphs display here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Demo Settings</h2>
+        <div class="form-group">
+            <label for="font-size">Font Size:</label>
+            <select class="form-control" id="font-size">
+                <option value="60px">Small</option>
+                <option value="400px">Medium</option>
+                <option value="800px">Large</option>
+                <option value="2800px">Extra Large</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="font-color">Font Color:</label>
+            <input type="color" class="form-control" id="font-color">
+        </div>
+
+        <div class="font-demo">
+            <p>This is a demo text showcasing the Matemasie font.</p>
+        </div>
+    </div>
+
+    <footer class="mt-5 text-center">
         <p>&copy; 2024 Matemasie Font. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
