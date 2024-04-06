@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemasie Font Showcase</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        @font-face {
-            font-family: 'Matemasie';
-            src: url('path/to/matemasie-font.woff2') format('woff2'),
-                 url('path/to/matemasie-font.woff') format('woff');
-            font-weight: 800; /* Ultra-Bold */
-            font-style: normal;
-        }
-
-        body {
-            font-family: 'Matemasie', Arial, sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemasie Font Showcase</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .font-demo {
+      font-family: 'Matemasie', sans-serif;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Matemasie Font Showcase</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#article">Article</a></li>
-                <li><a href="#glyphs">Glyphs</a></li>
-            </ul>
-        </nav>
-    </header>
+<body data-spy="scroll" data-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Matemasie Font</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#article">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#glyphs">Glyphs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>This section discusses the origin and background of the inspiration symbol.</p>
-    </section>
+  <div class="container mt-5">
+    <div id="about" class="row">
+      <div class="col">
+        <h2>About Matemasie Font</h2>
+        <p>Insert description about the font and its inspiration here.</p>
+      </div>
+    </div>
 
-    <section id="article">
+    <div id="article" class="row mt-5">
+      <div class="col">
         <h2>Article</h2>
-        <p>This section showcases the font in various contexts.</p>
-    </section>
+        <p>Insert article content here.</p>
+      </div>
+    </div>
 
-    <section id="glyphs">
+    <div id="glyphs" class="row mt-5">
+      <div class="col">
         <h2>Glyphs</h2>
-        <p>This section showcases all glyphs of the Matemasie font.</p>
-    </section>
+        <p>Insert glyphs display here.</p>
+      </div>
+    </div>
+  </div>
 
-    <footer style="background-color: black; color: white; font-size: 24px;">
-        <p>&copy; 2024 Matemasie Font. All rights reserved</p>
-    </footer>
+  <div class="container mt-5">
+    <h2>Demo Settings</h2>
+    <div class="form-group">
+      <label for="font-size">Font Size:</label>
+      <select class="form-control" id="font-size">
+        <option value="16px">Small</option>
+        <option value="24px">Medium</option>
+        <option value="32px">Large</option>
+        <option value="48px">Extra Large</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="font-color">Font Color:</label>
+      <input type="color" class="form-control" id="font-color">
+    </div>
+
+    <div class="font-demo">
+      <p>This is a demo text showcasing the Matemasie font.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#font-size').change(function(){
+        var fontSize = $(this).val();
+        $('.font-demo').css('font-size', fontSize);
+      });
+
+      $('#font-color').change(function(){
+        var fontColor = $(this).val();
+        $('.font-demo').css('color', fontColor);
+      });
+    });
+  </script>
 </body>
 </html>
