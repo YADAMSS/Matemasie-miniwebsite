@@ -62,31 +62,24 @@
       </div>
     </div>
   </div>
-
-  <div class="container mt-5">
-    <h2>Demo Settings</h2>
-    <div class="form-group">
-      <label for="font-size">Font Size:</label>
-      <select class="form-control" id="font-size">
-        <option value="16px">Small</option>
-        <option value="24px">Medium</option>
-        <option value="32px">Large</option>
-        <option value="48px">Extra Large</option>
-      </select>
+    <div id="specimenContainer">
+        <p id="typeSpecimen">Your Text Here</p>
     </div>
+<div id="controls">
+    <input type="text" id="userInput" placeholder="Type your text here" />
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+</div>
+        </section>
 
-    <div class="form-group">
-      <label for="font-color">Font Color:</label>
-      <input type="color" class="form-control" id="font-color">
-    </div>
-
-    <div class="font-demo">
-      <p>This is a demo text showcasing the Matemasie font.</p>
-    </div>
-  </div>
-
-  </div>
-
+        <section id="characters">
+            <h2>Font Characters</h2>
+            <div class="grid">
+                <!-- Dynamically filled with characters in script.js -->
+            </div>
+        </section>
+    </main>
     <footer class="mt-5 text-center">
         <p>&copy; 2024 Matemasie Font. All rights reserved.</p>
     </footer>
