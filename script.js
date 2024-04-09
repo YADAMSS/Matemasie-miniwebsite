@@ -25,14 +25,14 @@ function decreaseSize() {
 
 const gridContainer = document.querySelector('.grid');
 
-function displayGyphs(start, end) {
+function displayCharacters(start, end) {
     for (let i = start; i <= end; i++) {
-        let glyph = String.fromCharCode(i);
-        let glyphDiv = document.createElement('div');
-        glyphDiv.textContent = glyph;
-        gridContainer.appendChild(glyphDiv);
+        let character = String.fromCharCode(i);
+        let characterDiv = document.createElement('div');
+        characterDiv.textContent = character;
+        gridContainer.appendChild(characterDiv);
     }
 }
 
 // Example range: Basic Latin block (U+0020 to U+007E)
-displayGlyphs(32, 126);
+displayCharacters(32, 126);
