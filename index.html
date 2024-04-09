@@ -15,6 +15,17 @@
     .font-demo {
       font-family: 'Matemasie', sans-serif;
     }
+
+    /* Style for the grid */
+    .glyphs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+      grid-gap: 20px; /* Adjust the gap between grid items */
+    }
+
+    .glyphs-item {
+      text-align: center;
+    }
   </style>
 </head>
 <body data-spy="scroll" data-target="#navbarNav">
@@ -42,29 +53,31 @@
 
   <div class="container mt-5">
     <div id="about" class="row">
-      <div class="col">
-        <h2>About Matemasie Font</h2>
-        <p>Matemasie is an ultra-bold display typeface characterized by rounded edges and a distinctive feature where the shapes widen towards the top. It draws inspiration from the Adinkra symbol "Mate Masie," meaning "what I hear, I keep." This symbolizes interconnected ears, emphasizing the importance of listening and communication in oral traditions and cultures. Additionally, Mate Masie embodies principles of wisdom and prudence.</p>
-           </div>
+      <!-- Your existing content for "About" section -->
     </div>
 
-    <div id="article" class="row mt-5">
-      <div class="col">
-        <h2>Article</h2>
-        <p>Insert article content here.</p>
+    <div id="article" class="row">
+      <!-- Your existing content for "Article" section -->
+    </div>
+
+    <div id="glyphs" class="row">
+      <!-- Your existing content for "Glyphs" section -->
+    </div>
+
+    <div id="glyphs-showcase" class="row mt-5">
+      <h2>Glyphs Showcase</h2>
+      <div class="glyphs-grid">
+        <!-- Add grid items here to showcase glyphs characters -->
+        <div class="glyphs-item">Glyph 1</div>
+        <div class="glyphs-item">Glyph 2</div>
+        <div class="glyphs-item">Glyph 3</div>
+        <!-- Add more grid items as needed -->
       </div>
     </div>
+  </div>
 
-    <div id="glyphs" class="row mt-5">
-      <div class="col">
-        <h2>Glyphs</h2>
-        <p>Insert glyphs display here.</p>
-   
-        </section>
-    </main>
-    <footer class="mt-5 text-center">
-        <p>&copy; 2024 Matemasie Font. All rights reserved.</p>
-    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
