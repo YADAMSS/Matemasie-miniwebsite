@@ -52,14 +52,22 @@
       <div class="col">
         <h2>Article</h2>
         <p>Insert article content here.</p>
-      </div>
+      <div id="specimenContainer">
+        <p id="typeSpecimen">Your Text Here</p>
     </div>
+<div id="controls">
+    <input type="text" id="userInput" placeholder="Type your text here" />
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+</div>
+        </section>
 
-    <div id="glyphs" class="row mt-5">
-      <div class="col">
-        <h2>Glyphs</h2>
-        <p>Insert glyphs display here.</p>
-   
+        <section id="characters">
+            <h2>Font Characters</h2>
+            <div class="grid">
+                <!-- Dynamically filled with characters in script.js -->
+            </div>
         </section>
     </main>
     <footer class="mt-5 text-center">
