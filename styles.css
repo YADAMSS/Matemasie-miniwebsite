@@ -1,8 +1,10 @@
 @font-face {
-    font-family: 'Matemasie';
-    src: url('fonts/Matemasie-Regular.woff2') format('woff2');
+    font-family: 'matemasieregular';
+    src: url('fonts/matemasie-regular-webfont.woff2') format('woff2'),
+         url('fonts/matemasie-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 body, html {
@@ -15,7 +17,7 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Matemasie', sans-serif; /* Apply Matemasie font */
+    font-family: 'matemasieregular', sans-serif; /* Apply Matemasie font */
 }
 
 #specimenContainer {
