@@ -86,11 +86,12 @@ main {
 }
 
 .grid div {
-    background-color: #333;
-    color: #fff;
+    background-color: goldenrod;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 288px;
+    height: 300px;
+    font-size: 96px;
 }
 
