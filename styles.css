@@ -86,7 +86,7 @@ main {
 }
 
 .grid div {
-    background-color: goldenrod;
+    background-color: rgb(218, 165, 32);
     color: black;
     display: flex;
     justify-content: center;
