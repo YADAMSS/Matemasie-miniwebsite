@@ -35,7 +35,7 @@ function displayCharacters(start, end) {
 }
 
 // Example range: Basic Latin block (U+0020 to U+007E)
-displayCharacters(0,85,200);
+displayCharacters(41,61,128);
 
 
 
